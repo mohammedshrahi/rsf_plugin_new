@@ -12,10 +12,9 @@ public class RsfPlugin implements MethodCallHandler {
   /** Plugin registration. */
   static
   {
-    System.loadLibrary("devapi");
+    //System.loadLibrary("devapi");
   }
   public static void registerWith(Registrar registrar) {
-    Manager245 manager245 =new Manager245();
     final MethodChannel channel = new MethodChannel(registrar.messenger(), "rsf_plugin");
     channel.setMethodCallHandler(new RsfPlugin());
   }
@@ -37,6 +36,15 @@ public class RsfPlugin implements MethodCallHandler {
       case "setPower":
         int set = call.argument("set");
         manager245.setPower(set);
+        break;
+      case "getTag":
+        result.success(manager245.getTag());
+        break;
+      case "close":
+        manager245.close();
+        break;
+      case "clear":
+        manager245.clear();
         default:
           result.notImplemented();
     }

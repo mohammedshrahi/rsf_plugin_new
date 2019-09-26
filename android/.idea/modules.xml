@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SerialPort/SerialPort.iml" filepath="$PROJECT_DIR$/SerialPort/SerialPort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SerialPort/android-SerialPort.iml" filepath="$PROJECT_DIR$/SerialPort/android-SerialPort.iml" />
       <module fileurl="file://$PROJECT_DIR$/rsf_plugin.iml" filepath="$PROJECT_DIR$/rsf_plugin.iml" />
     </modules>
   </component>
